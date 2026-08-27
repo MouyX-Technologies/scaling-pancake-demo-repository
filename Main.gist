@@ -1,0 +1,233 @@
+MouyX GitHub Gist Control
+
+«Central lightweight control registry for MouyX Technologies projects, GitHub repositories, AI agents, development environments, and infrastructure.»
+
+Owner / Project Identity
+
+- Organization: "MouyX-Technologies"
+- Primary project identity: "Mouy-leng172"
+- Main development focus:
+  - AI Agents
+  - GitHub
+  - VS Code
+  - Cursor
+  - Gemini
+  - MQL5 / MetaTrader 5
+  - Trading systems
+  - VPS / DevOps
+
+---
+
+Account Identity Registry
+
+Gmail
+
+- "Lengkundee01"
+- "Keamouyleng369"
+- "Genxdbxfx03"
+- "genxapitrading"
+
+Proton
+
+- "Keamouyleng"
+
+AI / Agent Identity
+
+- "AI-Agent-Skill"
+
+«These are identifiers only. Never store passwords, recovery codes, API keys, PATs, OAuth tokens, or private credentials in this Gist.»
+
+---
+
+GitHub Control
+
+Organization
+
+MouyX-Technologies
+
+Recommended controls
+
+- Require 2FA where available
+- Use teams for repository permissions
+- Protect production branches
+- Require pull requests
+- Require CI checks
+- Disable unnecessary force pushes
+- Enable security scanning
+- Enable Dependabot where appropriate
+- Use GitHub Environments for deployment
+- Store secrets in GitHub Secrets
+
+---
+
+Repository Control
+
+Every production repository should have:
+
+.github/
+.vscode/
+.cursor/
+docs/
+scripts/
+src/
+tests/
+
+.env.example
+.gitignore
+README.md
+SECURITY.md
+LICENSE
+
+Branch model
+
+main
+  │
+  ├── develop
+  │
+  ├── feature/*
+  ├── fix/*
+  ├── security/*
+  └── release/*
+
+Production flow:
+
+feature
+   ↓
+Pull Request
+   ↓
+CI / Security Checks
+   ↓
+develop
+   ↓
+Staging
+   ↓
+Production Approval
+   ↓
+main
+
+---
+
+AI Agent Registry
+
+Jules
+
+Role:
+
+DevOps / Repository Orchestration Agent
+
+Recommended permissions:
+
+- Repository maintenance
+- CI/CD
+- Documentation
+- Pull requests
+- Issue management
+
+Do not automatically give organization-owner privileges.
+
+Gemini
+
+Role:
+
+AI Development / Research / Documentation
+
+Recommended permissions:
+
+- Code assistance
+- Documentation
+- Research
+- Pull-request preparation
+
+Cursor
+
+Role:
+
+Local Development / Coding Assistant
+
+Recommended permissions:
+
+- Local repository development
+- Code generation
+- Refactoring
+- Pull-request preparation
+
+---
+
+Infrastructure
+
+Target architecture:
+
+GitHub
+   │
+   ├── Actions
+   │
+   ├── Repositories
+   │
+   ├── Secrets
+   │
+   └── Releases
+        │
+        ▼
+Contabo VPS
+   │
+   ├── Docker
+   ├── Services
+   ├── AI Agents
+   ├── APIs
+   └── Trading Infrastructure
+
+---
+
+Secret Management
+
+Never place real secrets in:
+
+- Gists
+- README files
+- Source code
+- ".env" files committed to Git
+- Issues
+- Pull requests
+- Public repositories
+
+Use placeholders:
+
+GITHUB_TOKEN=
+GEMINI_API_KEY=
+JULES_API_KEY=
+CONTABO_API_KEY=
+MT5_LOGIN=
+MT5_PASSWORD=
+BROKER_API_KEY=
+
+Store actual values in the appropriate secret manager.
+
+---
+
+Control Status
+
+Component| Status
+GitHub Organization| Planned
+Organization Teams| Planned
+Gist Control| Starting
+Repository Registry| Planned
+Agent Registry| Planned
+GitHub Actions| Planned
+Security Rules| Planned
+Contabo VPS| Planned
+MT5 Infrastructure| Planned
+Secret Management| Required
+
+---
+
+Operating Rule
+
+The Gist is a control registry, not the production source of truth.
+
+Production code belongs in GitHub repositories.
+
+Credentials belong in secret storage.
+
+Infrastructure configuration belongs in version-controlled repositories.
+
+The Gist provides a lightweight map of how everything is connected.
